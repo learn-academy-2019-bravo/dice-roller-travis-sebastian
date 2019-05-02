@@ -12,7 +12,7 @@ class Log extends Component{
 
     render() {
 
-        let { rollLog } = this.props
+        let { rollLog, logHandler, logandroll } = this.props
         let formattedLog =
         `${rollLog}, `
         return(

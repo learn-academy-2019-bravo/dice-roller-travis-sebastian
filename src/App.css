@@ -22,18 +22,34 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.diceButton:active{
+    animation-name: diceswitch;
+    animation-duration: 30s;
+    transform: translateY(-4px);
 }
-#diceButton{
+@keyframes diceswitch {
+  0%  {background: url(./dice1.jpg);}
+  10% {background: url(./dice3.jpg);}
+  20% {background: url(./dice6.jpg);}
+  30% {background: url(./dice4.jpg);}
+  40% {background: url(./dice3.jpg);}
+  50% {background: url(./dice1.jpg);}
+  60% {background: url(./dice3.jpg);}
+  70% {background: url(./dice6.jpg);}
+  80% {background: url(./dice5.jpg);}
+  90% {background: url(./dice2.jpg);}
+  100% {background: url(./dice4.jpg);}
+}
+.diceButton{
     height: 85px;
     width: 85px;
-    margin-left: 200px;
+    margin: auto;
     background: url(./dice1.jpg);
+}
+.diceButton:hover {
+    background-color: #3e8e41
+}
+
+#refreshbtn{
+    margin-top: 45px;
 }
